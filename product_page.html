@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Infopulse</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+	<div id="status_menu">
+		<div class="container">
+			<div class="row">
+				<nav>
+					<ul class="list-unstyled list-inline text-right">
+						<li><a href="#">Sign in</a></li>
+						<li><a href="#">My Account</a></li>
+						<li><a href="#">Order Status</a></li>
+						<li><a href="#">Help</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<header id="top_bar">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2 text-center">
+					<img id="main_logo" src="assets/img/logo.png" title="Books online logo" alt="Books online logo">
+				</div>
+				<div class="col-md-6">
+					<form id="search_form">
+						<div class="input-group">
+							<input type="text" class="form-control" name="search_text" id="search_text">
+							<div class="input-group-addon">
+								<button type="button" id="search_button"><i class="glyphicon glyphicon-search"></i> <span>Search</span></button>
+							</div>
+						</div>	
+					</form>
+				</div>
+				<div class="col-md-4">
+					<article id="cart_block">
+						<div id="cart_block__top">
+							<object type="image/svg+xml" data="assets/img/cart.svg" id="cart_svg">
+								<img  id="cart_image" src="assets/img/cart.svg" alt="cart">
+							</object>
+							<h3 id="cart_text">Your cart <span>(2 items)</span></h3> 
+							
+						</div>
+						<div id="cart_block__bottom">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-xs-6" id="cart_price">
+										$<span>125.0</span>
+									</div>
+									<div class="col-xs-6" id="cart_open_block">
+										<button id="cart_open_btn" class="btn btn-block btn-dark">Checkout</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article id="wish_block" class="pull-right">
+						<object type="image/svg+xml" data="assets/img/star.svg" id="wish_svg">
+							<img id="wish_image" src="assets/img/star.svg" alt="Wish">
+						</object>
+						<h3 id="wish_text">Wish list<span class="badge">20</span></h3>
+					</article>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="type_menu">
+	<div class="container">
+		<div class="row">
+			<nav>
+				<ul class="nav nav-pills nav-justified">
+				  <li role="presentation" class="active"><a href="#"> Computers</a></li>       
+				  <li role="presentation"><a href="#">Cooking</a></li>       
+				  <li role="presentation"><a href="#">Education</a></li>      
+				  <li role="presentation"><a href="#">Fiction</a></li>      
+				  <li role="presentation"><a href="#">Health</a></li>       
+				  <li role="presentation"><a href="#">Mathematics</a></li>      
+				  <li role="presentation"><a href="#">Medical</a></li>     
+				  <li role="presentation"><a href="#">Reference</a></li>       
+				  <li role="presentation"><a href="#">Science</a></li>
+
+				</ul>
+			</nav>
+		</div>
+	</div>
+	</div>
+
+	<main>
+		<div class="container">
+			<div class="row">
+				<ol class="breadcrumb">			      
+				  <li><a href="#">Home</a></li>
+				  <li><a href="#">Discounts and Clearance</a></li>
+				  <li class="active">Sonatini Hippeastrum Alaska</li>
+				</ol>
+			</div>
+
+			<div class="row">
+				<article class="book_big_item ">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4 book_big_item__image_block">
+								<img src="assets/img/big-book.png" alt="Star Wars: Episode I" class="book_big_item__image">
+							</div>
+							<div class="col-md-8 book_big_item__content_block">
+								<div class="container col-md-12">
+								<div class="row">
+									<h1 class="inStoke_badge">Star Wars Episode I</h1>
+									<p class="book_big_item__description">The Star Wars Episode I: The Phantom Menace novelization was written by Terry Brooks and published on April 21, 1999 by Del Rey. It is based on the script of the movie of the same name. Narration for the abridged audio version was performed by Michael Cumpsty. The unabridged version was performed by Alexander Adams. On January 31, 2012, a new paperback edition was released with a new short story, End Game, by James Luceno featured inside. </p>
+								</div>
+								<div class="row book_big_item__sales_block">
+									<div class="col-sm-7">
+										<p class="book_big_item__price">Our price : <strong>$150</strong></p>
+										<small>Was $ 200 Save 20% </small>
+									</div>
+									<div class="col-sm-5">
+										<button class="btn btn-main center-block book_big_item__btn">Add to cart</button>
+									</div>
+
+									<div class=" col-md-12 book_big_item__pay_variant_block">
+										<p>Safe, Secure Shopping</p>
+										<img src="assets/img/pay-variant.png" alt="Pay variant">
+									</div>
+								</div>								
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+
+			<div class="row product_more_informations_block">
+				<div class="col-md-9">
+					<div id="information_block">
+						<ul class="nav nav-tabs nav-tabs-second">
+							<li class="active"><a data-toggle="tab" href="#information">Product Information</a></li>
+							<li><a data-toggle="tab" href="#other">Other details</a></li>
+						</ul>
+
+						<div class="tab-content tab-content-second">
+							<div id="information" class="tab-pane fade in active">
+						    	<p>The Star Wars Episode I: The Phantom Menace novelization was written by Terry Brooks and published on April 21, 1999 by Del Rey. It is based on the script of the movie of the same name. Narration for the abridged audio version was performed by Michael Cumpsty. The unabridged version was performed by Alexander Adams. On January 31, 2012, a new paperback edition was released with a new short story, End Game, by James Luceno featured inside. </p>
+
+								<p>The Star Wars Episode I: The Phantom Menace novelization was written by Terry Brooks and published on April 21, 1999 by Del Rey. It is based on the script of the movie of the same name. Narration for the abridged audio version was performed by Michael Cumpsty. The unabridged version was performed by Alexander Adams. On January 31, 2012, a new paperback edition was released with a new short story, End Game, by James Luceno featured inside. The Star Wars Episode I: The Phantom Menace novelization was written by Terry Brooks and published on April 21, 1999 by Del Rey. It is based on the script of the movie of the same name. Narration for the abridged audio version was performed by Michael Cumpsty. The unabridged version was performed by Alexander Adams. On January 31, 2012, a new paperback edition was released with a new short story, End Game, by James Luceno featured inside. The Star Wars Episode I: The Phantom Menace novelization was written by Terry Brooks and published on April 21, 1999 by Del Rey. It is based on the script of the movie of the same name. Narration for the abridged audio version was performed by Michael Cumpsty. The unabridged version was performed by Alexander Adams. On January 31, 2012, a new paperback edition was released with a new short story, End Game, by James Luceno featured inside. </p>
+							</div>
+							<div id="other" class="tab-pane fade">
+							    <h3>Menu 2</h3>
+							    <p>Some content in menu 2.</p>
+							</div>
+						</div>
+					</div>
+
+					<div id="review_block">
+						<h3>Product review</h3>
+						<div class="review_item">
+							<div class="review_item__image_block">
+								<img src="assets/img/person.png" alt="Person" class="review_item__image">
+								<p class="review_item__user_name">Name 1</p>
+							</div>
+							<div class="review_item__text">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially.</p>
+							</div>
+						</div>
+
+						<div class="review_item">
+							<div class="review_item__image_block">
+								<img src="assets/img/person.png" alt="Person" class="review_item__image">
+								<p class="review_item__user_name">Name 2</p>
+							</div>
+							<div class="review_item__text">
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially.</p>
+							</div>
+						</div>
+						
+						<h3>Write a comment</h3>
+						
+						<form class="form-horizontal">
+							<div class="form-group">
+							    <label for="name" class="col-sm-2 control-label">Your name</label>
+							    <div class="col-sm-10">
+							      <input type="email" class="form-control" id="name" placeholder="">
+							    </div>
+							</div>
+
+							<div class="form-group">
+							    <label for="email" class="col-sm-2 control-label">Email</label>
+							    <div class="col-sm-10">
+							      <input type="email" class="form-control" id="email" placeholder="">
+							    </div>
+							</div>
+
+							<div class="form-group">
+							    <label for="message" class="col-sm-2 control-label">Message</label>
+							    <div class="col-sm-10">
+							      <textarea name="message" class="form-control" id="message" rows="10"></textarea>
+							    </div>
+							</div>
+
+							<button class="btn btn-main pull-right">Submit</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-md-3" id="also_like_block">
+					<h3>You may also like</h3>
+					<article class="book_small_item">
+						<img src="assets/img/small-book.png" alt="Book" class="book_small_item__image">
+						<div class="book_small_item__content_block">
+							<h4>The Hare With Amber</h4>
+							<p class="book_small_item__price">$50</p>
+							<button class="btn btn-silver">Read more</button>
+						</div>
+					</article>
+
+					<article class="book_small_item">
+						<img src="assets/img/small-book.png" alt="Book" class="book_small_item__image">
+						<div class="book_small_item__content_block">
+							<h4>The Hare With Amber</h4>
+							<p class="book_small_item__price">$50</p>
+							<button class="btn btn-silver">Read more</button>
+						</div>
+					</article>
+
+					<article class="book_small_item">
+						<img src="assets/img/small-book.png" alt="Book" class="book_small_item__image">
+						<div class="book_small_item__content_block">
+							<h4>The Hare With Amber</h4>
+							<p class="book_small_item__price">$50</p>
+							<button class="btn btn-silver">Read more</button>
+						</div>
+					</article>
+
+					<article class="book_small_item">
+						<img src="assets/img/small-book.png" alt="Book" class="book_small_item__image">
+						<div class="book_small_item__content_block">
+							<h4>The Hare With Amber</h4>
+							<p class="book_small_item__price">$50</p>
+							<button class="btn btn-silver">Read more</button>
+						</div>
+					</article>
+
+					<article class="book_small_item">
+						<img src="assets/img/small-book.png" alt="Book" class="book_small_item__image">
+						<div class="book_small_item__content_block">
+							<h4>The Hare With Amber</h4>
+							<p class="book_small_item__price">$50</p>
+							<button class="btn btn-silver">Read more</button>
+						</div>
+					</article>
+
+					<article class="book_small_item">
+						<img src="assets/img/small-book.png" alt="Book" class="book_small_item__image">
+						<div class="book_small_item__content_block">
+							<h4>The Hare With Amber</h4>
+							<p class="book_small_item__price">$50</p>
+							<button class="btn btn-silver">Read more</button>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<footer>
+		<div id="footer_block_top" class="visible-lg-block visible-md-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<h4>Biography & True Stories</h4>
+						<ul class="list-unstyled">							
+						    <li><a href="#">General</a></li>
+						    <li><a href="#">Diaries, Letters & Journals</a></li>
+						    <li><a href="#">Memoirs</a></li>
+						    <li><a href="#">True Stories</a></li>
+						    <li><a href="#">Generic Exams</a></li>
+						    <li><a href="#">GK Titles</a></li>
+						    <li><a href="#">Medical Entrance</a></li>
+						    <li><a href="#">Other Entrance Exams</a></li>
+						    <li><a href="#">PG Entrance Examinations</a></li>
+						    <li><a href="#">Self-help Titles</a></li>
+						   	<li><a href="#">Sociology</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h4>Professional & Reference </h4>
+						<ul class="list-unstyled">
+						    <li><a href="#">Academic and Reference</a></li>
+						    <li><a href="#">Business Trade</a></li>
+						    <li><a href="#">Engineering and Computer Science</a></li>
+						    <li><a href="#">Humanities, Social Sciences and Languages</a></li>
+						    <li><a href="#">Introduction to Computers</a></li>
+						    <li><a href="#">Science and Maths</a></li>
+						    <li><a href="#">Trade Business</a></li>
+						    <li><a href="#">English Language & Literature</a></li>
+						    <li><a href="#">English Language Teaching</a></li>
+						    <li><a href="#">Environment Awareness</a></li>
+						    <li><a href="#">Environment Protection </a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h4>Earth Sciences</h4>
+						<ul class="list-unstyled">
+						    <li><a href="#">Algebra</a></li>
+							<li><a href="#">Differential Equations</a></li>
+							<li><a href="#">Discrete Mathematics</a></li>
+							<li><a href="#">Fourier Analysis</a></li>
+							<li><a href="#">Numerical Analysis</a></li>
+							<li><a href="#">Probability</a></li>
+							<li><a href="#">Statistical Methods/data Analysis</a></li>
+							<li><a href="#">Stochastic And Random Processes</a></li>
+							<li><a href="#">Topology</a></li>
+							<li><a href="#">Statistics</a></li>
+							<li><a href="#">Mathematics</a></li>
+							<li><a href="#">Statistical Methods </a></li>
+						</ul>
+					</div>
+					<div class="col-md-3">
+						<h4>Mathematics</h4>
+						<ul class="list-unstyled">
+						    <li><a href="#">Algebra</a></li>
+							<li><a href="#">Differential Equations</a></li>
+							<li><a href="#">Discrete Mathematics</a></li>
+							<li><a href="#">Fourier Analysis</a></li>
+							<li><a href="#">Numerical Analysis</a></li>
+							<li><a href="#">Probability</a></li>
+							<li><a href="#">Statistical Methods/data Analysis</a></li>
+							<li><a href="#">Stochastic And Random Processes</a></li>
+							<li><a href="#">Topology</a></li>
+							<li><a href="#">Statistics</a></li>
+							<li><a href="#">Mathematics</a></li>
+							<li><a href="#">Statistical Methods </a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer_block_bottom">
+			<h4> We accept all major Credit Card/Debit Card/Internet Banking </h4>
+			<img src="assets/img/payers.png" alt="Cards">
+			<h5> Conditions of Use Privacy Notice © 2012-2013, Booksonline, Inc. or its affiliates </h5>
+		</div>
+	</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="./assets/js/bootstrap.min.js"></script>
+	<script src="./assets/js/main.min.js"></script>
+</body>
+</html>
