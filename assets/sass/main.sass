@@ -4,6 +4,10 @@ $medium: 768px
 $large: 992px
 $xlarge: 1199px
 
+@font-face 
+	font-family: SegoeWP
+	src: url("../fonts/Segoe_WP.ttf"), url('../fonts/SegoeWPN.woff') format('woff')
+
 @mixin mediaQ($media) 
 	@if $media == xs 
 		@media only screen and (max-width: $small - 1) 
@@ -24,10 +28,6 @@ $xlarge: 1199px
 @mixin radiusSilverBorder
 	border: 1px solid #dedede
 	border-radius: 5px
-
-@font-face 
-	font-family: SegoeWP
-	src: url("../fonts/Segoe_WP.ttf")
 
 body
 	font-family: SegoeWP
