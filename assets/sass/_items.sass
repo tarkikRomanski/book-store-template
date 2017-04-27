@@ -1,0 +1,188 @@
+
+.book_item
+	text-align: center
+	width: 19.5%
+	height: 242px
+	vertical-align: top
+	display: inline-block
+	margin-bottom: 25px
+	cursor: pointer
+	position: relative
+	@include mediaQ(md)
+		width: 32.9%
+	@include mediaQ(sm)
+		width: 48.9%
+	@include mediaQ(xs)
+		width: 100%
+		height: auto
+	&:hover
+		.book_item__title
+			font-weight: bold
+	.book_item__image
+		height: 160px
+		width: 108px
+		@include mediaQ(xs)
+			width: 60%
+			height: auto
+	.book_item__title
+		width: 108px
+		margin-left: auto
+		margin-right: auto
+		font-size: 15px
+		font-weight: 300
+		line-height: 16px
+		color: #595959
+		height: 32px
+		overflow: hidden
+		text-overflow: ellipsis
+		@include mediaQ(xs)
+			height: auto
+	.book_item__price
+		font-size: 22px
+		font-family: Helvatica, sans-serif
+		line-height: 20px
+		color: #f05356
+	.badge_off
+		@include positionA(-10px, 50%, auto, auto)
+		@include mediaQ(xs)
+			right: 35%
+		margin-right: -70px
+		width: 50px
+		height: 50px
+		background: #f05356
+		border-radius: 50%
+		padding: 13px 0 0 0
+		color: #ffffff
+		text-align: center
+		p
+			margin: 0
+			font-size: 19px
+			font-weight: bold
+			line-height: 15px
+		&>small
+			font-size: 13px
+			font-weight: normal
+			line-height: 10px
+
+
+
+.book_big_item
+	@include radiusSilverBorder
+	padding: 20px
+	padding-bottom: 28px	
+	margin-bottom: 12px
+	& &__image
+		width: 100%
+	& &__content_block		
+		padding-right: 70px
+		@include mediaQ(md)
+			padding-right: 20px
+		h1
+			margin-top: 11px
+			margin-bottom: 25px
+			font-size: 41px
+			color: #595959
+			font-weight: 100
+			position: relative
+			&.inStoke_badge:after
+				content: ''
+				width: 47px
+				height: 30px
+				@include positionA(50%, 0, auto, auto)
+				margin-top: -15px
+				background: url("../img/in-stock.png") no-repeat center
+				@include mediaQ(sm)
+					margin-top: 0
+					top: -50px
+		.book_big_item__description
+			color: #7e7e7e
+			font-size: 16px
+			line-height: 26px
+			margin-bottom: 23px
+		.book_big_item__sales_block
+			border: 1px solid rgba(181, 176, 176, 0.57)
+			padding: 18px 5px
+			.book_big_item__price
+				font-size: 36px
+				font-weight: 300
+				color: #015699
+				margin-bottom: 0
+				strong
+					color: #e45858
+				&+small
+					color: #939292
+					font-size: 17px
+					line-height: 13px
+			.book_big_item__btn
+				padding-left: 30px
+				padding-right: 30px
+				margin-top: 20px
+			.book_big_item__pay_variant_block				
+				p
+					margin-top: 25px
+					padding-top: 10px
+					border-top: #d1d1d1 1px solid
+					font-size: 13px
+					font-family: Helvetica sans-serif
+					font-weight: 400
+					color: #939292
+					&:before
+						content: ''
+						position: relative
+						display: inline-block
+						width: 14px
+						height: 14px
+						background: url("../img/lock.png") no-repeat center
+						margin-right: 3px
+
+.book_small_item
+	border-bottom: solid 1px #e7e7e7
+	padding-bottom: 10px
+	padding-left: 15px
+	margin-top: 10px
+	@include mediaQ(md)
+		width: 49.5%
+		display: inline-block
+	@include mediaQ(sm)
+		width: 100%
+	& &__image
+		box-shadow: 0 0 16px rgba(0, 0, 0, 0.13)
+		width: 60px
+		height: 88px
+		display: inline-block
+	& &__content_block
+		max-width: 144px
+		margin-left: 2px
+		display: inline-block
+		vertical-align: top
+		h4
+			padding-top: 0
+			font-size: 15px
+			font-weight: 100
+			color: #595959
+			margin-top: 4px
+			margin-bottom: 0
+			overflow: hidden
+			white-space: nowrap
+			text-overflow: ellipsis
+		.book_small_item__price
+			color: #f05356
+			font-weight: 700
+			font-size: 22px
+			margin-bottom: 8px
+
+.review_item	
+	border-bottom: #e3e3e3 solid 1px
+	margin-bottom: 16px
+	&+&
+		border-bottom: none
+	& &__image_block
+		display: inline-block
+		vertical-align: top
+		width: auto
+		height: 100%
+		text-align: center
+		margin-right: 15px
+	& &__text
+		display: inline-block
+		width: 85%

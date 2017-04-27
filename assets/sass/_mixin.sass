@@ -1,0 +1,31 @@
+@mixin mediaQ($media) 
+	@if $media == xs 
+		@media only screen and (max-width: $small - 1) 
+			@content
+	@else if $media == sm
+		@media only screen and (max-width: $medium - 1) 
+			@content
+	@else if $media == md
+		@media only screen and (max-width: $large - 1) 
+			@content
+	@else if $media == lg 
+		@media only screen and (min-width: $large)
+			@content
+	@else if $media == xl 
+		@media only screen and (max-width: $xlarge)
+			@content
+
+@mixin radiusSilverBorder
+	border: 1px solid #dedede
+	border-radius: 5px
+
+@mixin bannerHeight
+	max-height: 367px
+	min-height: inherit
+
+@mixin positionA($t, $r, $b, $l)
+	position: absolute 
+	top: $t
+	bottom: $b
+	left: $l
+	right: $r

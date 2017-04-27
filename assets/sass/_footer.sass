@@ -1,0 +1,46 @@
+footer
+	margin-top: 10px
+	#footer_block_top
+		background: url("../img/bg-footer.png")
+		color: #ddd
+		padding-bottom: 20px
+		padding-top: 10px
+		h4
+			font-size: 20px
+			font-weight: 100
+			line-height: 20px
+			opacity: 0.7
+			margin: 20px 0
+		li
+			opacity: 0.7
+			padding-left: 5px
+			padding-bottom: 5px
+			position: relative
+			&:after
+				opacity: 0.7
+				content: ' '
+				height: 1px
+				background: #ddd
+				@include positionA(auto, 30%, 0, 0)
+			&>a
+				font-size: 14px
+				font-weight: 100
+				line-height: 24px
+				color: #ddd	
+
+				&:hover
+					text-decoration: none
+					color: #bbb
+	#footer_block_bottom
+		background: url("../img/bg-footer2.png")
+		text-align: center
+		padding: 20px 0
+		h4
+			font-size: 20px
+			color: #ddd
+		h5
+			padding-top: 17px
+			margin-top: 13px
+			border-top: #555 solid 1px
+			font-size: 16px
+			color: #ddd

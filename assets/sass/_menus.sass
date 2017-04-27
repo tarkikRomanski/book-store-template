@@ -1,0 +1,87 @@
+
+div.type_menu
+	width: 100%
+	height: auto
+	outline: solid 1px #dedede
+	outline-offset: -1px
+	margin-bottom: 10px	
+
+div#status_menu
+	width: 100%
+	height: 28px
+	background-color: #424242
+	padding: 4px 0
+	li>a
+		font-size: 16px
+		color: #ffffff
+		font-weight: 100
+		margin-right: 10px
+		@include mediaQ(xs)
+			font-size: 12px
+		&:hover
+			text-decoration: none
+			color: #e3e3e3
+
+
+
+#categories_menu
+	border: 1px solid rgba(0, 0, 1, 0.16)
+	padding: 12px 0
+	&_checked
+		display: none
+	i
+		display: none
+	#categories_list
+		transition: all 1s
+
+	@include mediaQ(md)
+		padding: 12px
+		#categories_list
+			display: none
+			height: 0
+		i 
+			display: inline-block
+			transition: all 1s
+		&_checked
+			&+label
+				i
+					transform: rotate(180deg)
+			&:checked+label	
+				i
+					transform: rotate(0deg)		
+				&+#categories_list
+					display: block
+					height: auto
+
+	span#categories_title
+		font-size: 24px
+		color: #6b6969
+		font-weight: 100
+		cursor: pointer
+		margin-bottom: 7px
+		padding: 0 19px
+	.nav-pills
+		h5
+			font-size: 17px
+			padding: 0 21px
+			padding-bottom: 9px
+			color: #696969
+			font-weight: 600
+	.nav-pills>li
+		&>a
+			font-size: 15px
+			color: #555454
+			border-radius: 0
+			padding: 5px 25px
+			&:after
+				content: ''
+				@include positionA(auto, 21px, 0, 21px)
+				height: 1px
+				background: #e6e7e9
+		&.active>a, &:hover>a
+			background-image: linear-gradient(to top, #79b260 0%, #92d774 100%)
+			color: #fff
+			border: none
+			&:after
+				background: transparent
+
