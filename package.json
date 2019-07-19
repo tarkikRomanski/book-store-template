@@ -1,0 +1,30 @@
+{
+  "name": "book-store-template",
+  "version": "1.0.0",
+  "description": "HTML template for testing",
+  "main": "index.html",
+  "scripts": {
+    "styles": "gulp style"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tarkikRomanski/book-store-template.git"
+  },
+  "keywords": [
+    "html"
+  ],
+  "author": "tarkikRomanski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tarkikRomanski/book-store-template/issues"
+  },
+  "homepage": "https://github.com/tarkikRomanski/book-store-template#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  }
+}
